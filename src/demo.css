@@ -1,0 +1,29 @@
+label {
+  display: block;
+}
+
+h2, h3 {
+  font-weight: 300;
+}
+
+.demo {
+  display: table;
+  width: 100%;
+  border: 1px solid #333;
+}
+
+.demo__editor {
+  display: table-cell;
+  width: 30%;
+  vertical-align: top;
+  background-color: #F7F7F7;
+  padding: 8px;
+  border-right: 1px solid #333;
+}
+
+.demo__preview {
+  display: table-cell;
+  width: 70%;
+  vertical-align: top;
+  padding-bottom: 1px;
+}
