@@ -28,9 +28,7 @@ export default class Diagonal extends React.PureComponent {
   render() {
     const { color, ratio, flip, ...props } = this.props;
 
-    const svgPoints = this.computePoints()
-      .map(xy => xy.join(","))
-      .join(" ");
+    const svgPoints = this.computePoints().join(" ");
     return (
       <svg {...props} viewBox={`0 0 ${WIDTH} ${ratio * WIDTH}`}>
         <polygon points={svgPoints} style={{ fill: color }} />
